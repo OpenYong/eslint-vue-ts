@@ -1,5 +1,5 @@
 {
-  "name": "@yong/eslint-vue-ts",
+  "name": "@yong/eslint-config-vue",
   "version": "1.0.0",
   "description": "ES Lint for Vue-TS projects.",
   "main": "index.js",
@@ -23,6 +23,9 @@
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
-    "eslint-plugin-vue": "^9.19.2"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.19.2",
+    "prettier": "3.1.1"
   }
 }
