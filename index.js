@@ -8,6 +8,9 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:vue/vue3-essential",
     "plugin:prettier/recommended",
+    'plugin:vue/vue3-strongly-recommended',
+    '@vue/eslint-config-typescript',
+    '@vue/eslint-config-prettier/skip-formatting'
   ],
   overrides: [
     {
@@ -25,21 +28,12 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "vue"],
+  plugins: ["@typescript-eslint", "vue",'prettier'],
   rules: {
     indent: ["error", "tab"],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "single"],
     semi: ["error", "never"],
-    "prettier/prettier": [
-      "error",
-      {
-        printWidth: 100,
-        semi: false,
-        singleQuote: true,
-        tabWidth: 2,
-        trailingComma: "all",
-      },
-    ],
+    'vue/attribute-hyphenation': ['error', 'never']
   },
 };
